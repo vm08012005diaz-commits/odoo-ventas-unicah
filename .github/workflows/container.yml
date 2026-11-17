@@ -23,4 +23,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/odoo-ventas-unicah:latest
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/odoo-ventas-unicah:latest
+            ghcr.io/${{ github.repository_owner }}/odoo-ventas-unicah:v2
