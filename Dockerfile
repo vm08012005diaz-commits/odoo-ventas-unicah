@@ -2,8 +2,8 @@ FROM odoo:18.0
 
 USER root
 COPY ./config/odoo.conf /etc/odoo/odoo.conf
-COPY ./addons /mnt/extra-addons
-RUN chown -R odoo:odoo /etc/odoo/odoo.conf /mnt/extra-addons
+COPY ./addons /opt/odoo-custom-addons
+RUN chown -R odoo:odoo /etc/odoo/odoo.conf /opt/odoo-custom-addons
 
 USER odoo
 EXPOSE 8069
